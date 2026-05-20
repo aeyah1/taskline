@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taskline — A clean, focused task manager</title>
+  <meta name="description" content="Capture tasks, set priorities, and finish the day strong. Taskline is a distraction-free task manager built for people who want to get more done.">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body>
+  <div class="landing">
+    <!-- NAV -->
+    <header class="landing-nav">
+      <div class="inner">
+        <a href="index.html" class="brand">
+          <span class="logo" data-icon="check" style="width:30px;height:30px;"></span>
+          <span>Taskline</span>
+        </a>
+        <nav class="links" aria-label="Primary">
+          <a href="#features" class="linklike">Features</a>
+          <a href="#how"      class="linklike">How it works</a>
+          <a href="#stack"    class="linklike">Built with</a>
+          <a href="#team"     class="linklike">Team</a>
+          <a href="login.html" class="btn btn-secondary btn-sm">Sign in</a>
+          <a href="register.html" class="btn btn-primary btn-sm">Get started</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="landing-hero">
+      <div class="wrap">
+        <span class="pill" data-reveal>
+          <span class="dot"></span>
+          New &middot; Quick-add, sparkline, color-coded dashboard
+        </span>
+        <h1 data-reveal data-delay="1">
+          The task manager that <span class="gradient-text">stays out of your way.</span>
+        </h1>
+        <p class="sub" data-reveal data-delay="2">
+          Capture what's next, set priorities, and watch your day come together. Taskline is a clean, distraction-free task manager — no signups to forget, no inbox to clear, no notifications to dismiss.
+        </p>
+        <div class="cta" data-reveal data-delay="3">
+          <a href="register.html" class="btn btn-primary">
+            <span data-icon="plus"></span>Create your account
+          </a>
+          <a href="login.html" class="btn btn-secondary">I already have one</a>
+        </div>
+        <div class="meta" data-reveal data-delay="4">
+          <span><span class="icon" data-icon="check"></span>No installation</span>
+          <span><span class="icon" data-icon="check"></span>No database setup</span>
+          <span><span class="icon" data-icon="check"></span>Your data stays on your device</span>
+        </div>
+      </div>
+
+      <!-- Mock preview card -->
+      <div class="preview-shell" data-reveal data-delay="5">
+        <div class="preview-card">
+          <div class="preview-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="url">taskline.app/dashboard</span>
+          </div>
+          <div class="preview-body">
+            <aside class="preview-side">
+              <div class="item active"><span class="ico"></span>Dashboard</div>
+              <div class="item"><span class="ico"></span>Tasks</div>
+              <div class="item"><span class="ico"></span>Profile</div>
+            </aside>
+            <div class="preview-main">
+              <div class="preview-stats">
+                <div class="ps"><div class="lbl">Total</div><div class="num">24</div></div>
+                <div class="ps"><div class="lbl">In progress</div><div class="num">11</div></div>
+                <div class="ps"><div class="lbl">Done</div><div class="num">13</div></div>
+                <div class="ps"><div class="lbl">Rate</div><div class="num">54%</div></div>
+              </div>
+              <div class="preview-list">
+                <div class="pli"><span class="dot d"></span><span class="grow">Finalize the reflection document</span><span class="pill">High</span></div>
+                <div class="pli"><span class="dot w"></span><span class="grow">Polish dashboard color palette</span><span class="pill">Medium</span></div>
+                <div class="pli"><span class="dot s"></span><span class="grow">Export user data as JSON</span><span class="pill">Done</span></div>
+                <div class="pli"><span class="dot w"></span><span class="grow">Test the registration edge cases</span><span class="pill">Medium</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="landing-section center" style="padding-top: var(--s-4);">
+      <div class="wrap stats-strip" data-reveal>
+        <div class="item"><div class="n"><span class="grad">6</span></div><div class="l">Features built in</div></div>
+        <div class="item"><div class="n"><span class="grad">0</span></div><div class="l">External services</div></div>
+        <div class="item"><div class="n"><span class="grad">24h</span></div><div class="l">Session lifetime</div></div>
+        <div class="item"><div class="n"><span class="grad">100%</span></div><div class="l">Your data, your device</div></div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="landing-section">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Everything you need</span>
+        <h2 data-reveal data-delay="1">Built around how you actually work.</h2>
+        <p class="lead" data-reveal data-delay="2">
+          Six features that each earn their place. No bloat, no half-finished ideas, no learning curve.
+        </p>
+
+        <div class="feature-grid">
+          <article class="feature-card v1" data-reveal>
+            <div class="ico" data-icon="user"></div>
+            <h3>Sign in your way</h3>
+            <p>Register once, then log in using either your username or your email. A strength meter helps you pick a real password.</p>
+          </article>
+          <article class="feature-card v2" data-reveal data-delay="1">
+            <div class="ico" data-icon="layers"></div>
+            <h3>A dashboard that talks back</h3>
+            <p>Color-coded stat cards, today's focus, the week ahead, and a 7-day completion sparkline so you can see momentum.</p>
+          </article>
+          <article class="feature-card v3" data-reveal data-delay="2">
+            <div class="ico" data-icon="list"></div>
+            <h3>Full task CRUD</h3>
+            <p>Create, edit, complete, and delete tasks with priority, due date, and a confirm dialog on destructive actions.</p>
+          </article>
+          <article class="feature-card v4" data-reveal data-delay="3">
+            <div class="ico" data-icon="search"></div>
+            <h3>Search, filter, sort</h3>
+            <p>Find any task by keyword. Filter by status or priority. Sort by smart, newest, oldest, due date, or priority.</p>
+          </article>
+          <article class="feature-card v5" data-reveal data-delay="4">
+            <div class="ico" data-icon="checkCircle"></div>
+            <h3>Real feedback</h3>
+            <p>Toasts confirm every action. Inline errors appear as you submit. The strength meter and overdue chips speak up.</p>
+          </article>
+          <article class="feature-card v6" data-reveal data-delay="5">
+            <div class="ico" data-icon="download"></div>
+            <h3>You own your data</h3>
+            <p>Export everything as JSON whenever you want. Re-import on a new device. Clear it all from the danger zone. GDPR-style portability, no fuss.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how" class="landing-section" style="background: var(--surface); border-block: 1px solid var(--border);">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>How it works</span>
+        <h2 data-reveal data-delay="1">From zero to focused in three steps.</h2>
+        <p class="lead" data-reveal data-delay="2">Open it, sign in, start working. That's the whole onboarding.</p>
+
+        <div class="steps">
+          <div class="step" data-reveal>
+            <h4>Create your account</h4>
+            <p>Pick a username, drop in your email, choose a real password. The meter tells you when it's strong.</p>
+          </div>
+          <div class="step" data-reveal data-delay="1">
+            <h4>Capture what's next</h4>
+            <p>Press <kbd style="font:600 11px/1.4 var(--font-mono); background:var(--surface-2); border:1px solid var(--border-strong); border-bottom-width:2px; padding:2px 7px; border-radius:4px;">N</kbd> or use the quick-add on the dashboard. Set a due date and a priority if it matters.</p>
+          </div>
+          <div class="step" data-reveal data-delay="2">
+            <h4>Finish the day strong</h4>
+            <p>Check tasks off as you go. Watch your completion rate climb. Export your data whenever you want.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILT WITH -->
+    <section id="stack" class="landing-section">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Built with care</span>
+        <h2 data-reveal data-delay="1">Plain web. Zero dependencies.</h2>
+        <p class="lead" data-reveal data-delay="2">
+          Just HTML, CSS, and JavaScript. No frameworks to learn, no node_modules to break, no build step. Open the folder, double-click <code style="font-family:var(--font-mono); font-size:0.9em; background:var(--surface-2); padding:2px 6px; border-radius:4px;">index.html</code>, and it works.
+        </p>
+        <div class="feature-grid">
+          <article class="feature-card v4" data-reveal>
+            <div class="ico" data-icon="layers"></div>
+            <h3>Separated concerns</h3>
+            <p>Persistence, auth, validation, UI, and business logic each live in their own file. Single-responsibility from the start.</p>
+          </article>
+          <article class="feature-card v5" data-reveal data-delay="1">
+            <div class="ico" data-icon="settings"></div>
+            <h3>Design tokens</h3>
+            <p>A single tokens file drives every color, spacing, radius, and motion value. Change one variable, the whole app updates.</p>
+          </article>
+          <article class="feature-card v3" data-reveal data-delay="2">
+            <div class="ico" data-icon="info"></div>
+            <h3>Accessibility-aware</h3>
+            <p>Real focus rings, ARIA labels on icon buttons, semantic HTML, and a reduced-motion preference fallback.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="landing-section center" style="background: var(--surface); border-block: 1px solid var(--border);">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>The Avengers</span>
+        <h2 data-reveal data-delay="1">Built by four superhumans who like yummy code.</h2>
+        <p class="lead" data-reveal data-delay="2">
+          A small elite group from North Eastern Mindanao State University Cantilan - Campus &mdash; College of Information Technology Education.
+        </p>
+
+        <div class="team-grid">
+          <article class="team-card alleah" data-reveal>
+            <span class="team-leader-badge"><span data-icon="star"></span>Leader</span>
+            <div class="team-avatar">
+              <img class="team-photo" alt="Alleah" loading="lazy"
+                src="assets/images/alleah.jpg"
+                onload="this.classList.add('loaded')" onerror="this.remove()">
+              <span class="shine" style="--shine-delay: 0s;"></span>
+              <span class="initials">AC</span>
+            </div>
+            <div class="team-name">Alleah Carmel Quiñones</div>
+            <div class="team-role">Team Leader &middot; Super Ultra Developer</div>
+            <span class="team-divider"></span>
+            <p class="team-bio">Drives the architecture, the design system, and the late-night refactors.</p>
+            <a class="team-social" href="https://www.facebook.com/alleah.quinones.05/" target="_blank" rel="noopener noreferrer" aria-label="Alleah's Facebook">
+              <span data-icon="facebook"></span> Facebook
+            </a>
+          </article>
+
+          <article class="team-card ronald" data-reveal data-delay="1">
+            <div class="team-avatar">
+              <img class="team-photo" alt="Ronald" loading="lazy"
+                src="assets/images/ronald.jpg"
+                onload="this.classList.add('loaded')" onerror="this.remove()">
+              <span class="shine" style="--shine-delay: 0.6s;"></span>
+              <span class="initials">RO</span>
+            </div>
+            <div class="team-name">Ronald Rentosa</div>
+            <div class="team-role">Super Developer</div>
+            <span class="team-divider"></span>
+            <p class="team-bio">Hunts down edge cases and keeps the team unblocked.</p>
+            <a class="team-social" href="https://www.facebook.com/Coachronaldrentosa5" target="_blank" rel="noopener noreferrer" aria-label="Ronald's Facebook">
+              <span data-icon="facebook"></span> Facebook
+            </a>
+          </article>
+
+          <article class="team-card ranay" data-reveal data-delay="2">
+            <div class="team-avatar">
+              <img class="team-photo" alt="Ranay" loading="lazy"
+                src="assets/images/jhun.jpg"
+                onload="this.classList.add('loaded')" onerror="this.remove()">
+              <span class="shine" style="--shine-delay: 1.2s;"></span>
+              <span class="initials">RA</span>
+            </div>
+            <div class="team-name">Jhun Mecko Ranay</div>
+            <div class="team-role">Super Developer</div>
+            <span class="team-divider"></span>
+            <p class="team-bio">Pairs well, tests well, ships well.</p>
+            <a class="team-social" href="https://www.facebook.com/john.ranay.77" target="_blank" rel="noopener noreferrer" aria-label="Ranay's Facebook">
+              <span data-icon="facebook"></span> Facebook
+            </a>
+          </article>
+
+          <article class="team-card bashmelili" data-reveal data-delay="3">
+            <div class="team-avatar">
+              <img class="team-photo" alt="Bashmelili" loading="lazy"
+                src="assets/images/bashmila.jpg"
+                onload="this.classList.add('loaded')" onerror="this.remove()">
+              <span class="shine" style="--shine-delay: 1.8s;"></span>
+              <span class="initials">BA</span>
+            </div>
+            <div class="team-name">Bashmila Yparraguirre</div>
+            <div class="team-role">Super Developer</div>
+            <span class="team-divider"></span>
+            <p class="team-bio">Quality eye on every detail &mdash; the polish is theirs.</p>
+            <a class="team-social" href="https://www.facebook.com/bashmila.yparraguirre" target="_blank" rel="noopener noreferrer" aria-label="Bashmelili's Facebook">
+              <span data-icon="facebook"></span> Facebook
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="landing-section" style="padding-top: 0;">
+      <div class="wrap">
+        <div class="cta-block" data-reveal>
+          <div class="wrap">
+            <h2>Ready to take back your day?</h2>
+            <p>Set up your Taskline account in under a minute. No credit card, no install, no waitlist.</p>
+            <div class="cta" style="display:flex; gap:var(--s-3); justify-content:center; flex-wrap:wrap;">
+              <a href="register.html" class="btn btn-primary"><span data-icon="plus"></span>Create your account</a>
+              <a href="login.html" class="btn btn-secondary">Sign in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="landing-footer">
+      <div class="inner">
+        <div class="brand-mini">
+          <span class="logo" data-icon="check"></span>
+          <span>Taskline</span>
+        </div>
+        <div>A Final Project for Application Development &middot; Owned by Alleah Carmel and the Group</div>
+        <div>&copy; 2026 &middot; NEMSU CITE</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script>
+    // Landing page bootstrap — mount icons, swap CTAs if signed in, reveal on scroll.
+    mountIcons();
+
+    // If a session is active, swap the auth CTAs to a single "Open dashboard" link
+    // so the landing still shows but skips redundant sign-in prompts.
+    (function swapCtasIfSignedIn() {
+      const user = Auth.currentUser();
+      if (!user) return;
+      document.querySelectorAll('a[href="login.html"], a[href="register.html"]').forEach(a => {
+        a.href = 'dashboard.html';
+        // Replace label only on text-only anchors (skip ones with icons inside).
+        if (!a.querySelector('[data-icon]')) {
+          a.textContent = a.classList.contains('btn-primary') || a.classList.contains('linklike')
+            ? 'Open dashboard'
+            : 'Open dashboard';
+        } else {
+          // Keep icon, just replace trailing text node.
+          const txt = [...a.childNodes].find(n => n.nodeType === 3 && n.textContent.trim());
+          if (txt) txt.textContent = 'Open dashboard';
+        }
+      });
+    })();
+
+    // Reveal-on-scroll for [data-reveal] elements
+    (function () {
+      const els = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(el => el.classList.add('in'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+      els.forEach(el => io.observe(el));
+    })();
+
+    // Smooth scroll for in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (id.length < 2) return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Base: reset + typography + helpers */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-base);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); font-weight: var(--fw-bold); line-height: var(--lh-tight); color: var(--text); }
+h1 { font-size: var(--fs-3xl); letter-spacing: -0.025em; }
+h2 { font-size: var(--fs-2xl); letter-spacing: -0.02em; }
+h3 { font-size: var(--fs-xl); letter-spacing: -0.015em; font-weight: var(--fw-semibold); }
+h4 { font-size: var(--fs-lg); font-weight: var(--fw-semibold); }
+
+/* Display utility — for landing hero etc */
+.display { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.035em; line-height: 1.05; }
+
+p { margin: 0; color: var(--text-muted); }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-hover); text-decoration: underline; }
+
+small, .muted { color: var(--text-muted); font-size: var(--fs-sm); }
+
+ul { list-style: none; padding: 0; margin: 0; }
+
+img, svg { display: block; max-width: 100%; }
+
+/* Focus ring — accessibility */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--r-sm);
+}
+
+/* Selection */
+::selection { background: var(--accent-soft); color: var(--accent-ink); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: var(--r-pill); border: 2px solid var(--bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-soft); }
+
+/* Utility */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+.row { display: flex; gap: var(--s-3); align-items: center; }
+.row.between { justify-content: space-between; }
+.row.wrap { flex-wrap: wrap; }
+.col { display: flex; flex-direction: column; gap: var(--s-3); }
+.spacer { flex: 1; }
+.hidden { display: none !important; }

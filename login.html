@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in — Taskline</title>
+  <meta name="description" content="Sign in to your Taskline account.">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/landing.css">
+</head>
+<body>
+  <div class="auth-shell">
+    <aside class="auth-hero">
+      <span class="hero-blob b1" aria-hidden="true"></span>
+      <span class="hero-blob b2" aria-hidden="true"></span>
+      <span class="hero-blob b3" aria-hidden="true"></span>
+
+      <a href="index.html" class="brand" style="text-decoration:none; color:var(--text);">
+        <span data-icon="check" style="width:24px; height:24px; color:var(--accent);"></span>
+        <span>Taskline</span>
+      </a>
+
+      <div class="hero-body">
+        <h1 class="display">Stay focused on what is next.</h1>
+        <p>Capture tasks, set priorities, and watch your day come together. Taskline is a clean, distraction-free task manager built for people who want to get more done.</p>
+      </div>
+
+      <div class="auth-cast" aria-label="The team is watching">
+        <div class="cast-character leader">
+          <div class="cast-avatar">
+            <img class="cast-photo" alt="Alleah" loading="lazy"
+              src="assets/images/alleah.jpg"
+              onload="this.classList.add('loaded')" onerror="this.remove()">
+            <span class="initials">AC</span>
+          </div>
+          <div class="cast-bubble">Welcome back. Focus mode: on.</div>
+        </div>
+
+        <div class="cast-character funny">
+          <div class="cast-avatar">
+            <img class="cast-photo" alt="Ronald" loading="lazy"
+              src="assets/images/ronald.jpg"
+              onload="this.classList.add('loaded')" onerror="this.remove()">
+            <span class="initials">RO</span>
+          </div>
+          <div class="cast-bubble">Tell me you saved the password this time.</div>
+        </div>
+
+        <div class="cast-character dumb">
+          <div class="cast-avatar">
+            <img class="cast-photo" alt="Ranay" loading="lazy"
+              src="assets/images/jhun.jpg"
+              onload="this.classList.add('loaded')" onerror="this.remove()">
+            <span class="initials">RA</span>
+          </div>
+          <div class="cast-bubble">Wait... is this Facebook?</div>
+        </div>
+
+        <div class="cast-character nonchalant">
+          <div class="cast-avatar">
+            <img class="cast-photo" alt="Bashmelili" loading="lazy"
+              src="assets/images/bashmila.jpg"
+              onload="this.classList.add('loaded')" onerror="this.remove()">
+            <span class="initials">BA</span>
+          </div>
+          <div class="cast-bubble">Either way, dashboard's that way →</div>
+        </div>
+      </div>
+
+      <div class="hero-meta">A Final Project for Application Development &middot; Owned by Alleah Carmel</div>
+    </aside>
+
+    <section class="auth-pane">
+      <div class="auth-card fade-in">
+        <header class="auth-header">
+          <h2>Welcome back</h2>
+          <p class="auth-sub">Sign in to continue to your dashboard.</p>
+        </header>
+
+        <form id="loginForm" class="auth-form" novalidate>
+          <div class="field">
+            <label for="identifier">Username or email</label>
+            <input id="identifier" class="input" name="identifier" type="text" autocomplete="username" placeholder="alleah_c or you@example.com" required>
+            <div class="err" data-err="identifier"></div>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <div class="pw-wrap">
+              <input id="password" class="input" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+              <button type="button" class="pw-toggle" data-toggle-pw="password" aria-label="Show password" title="Show password"></button>
+            </div>
+            <div class="err" data-err="password"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </form>
+
+        <div class="auth-foot">
+          Need an account? <a href="register.html">Create one</a>
+          &nbsp;&middot;&nbsp;
+          <a href="index.html">Back home</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/storage.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/pages/login.js"></script>
+</body>
+</html>

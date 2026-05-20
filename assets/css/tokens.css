@@ -1,0 +1,119 @@
+/* Design tokens — single source of truth for colors, spacing, radii, shadows, motion */
+:root {
+  /* Surface */
+  --bg:            #FAFAF9;
+  --surface:       #FFFFFF;
+  --surface-2:     #F5F5F4;
+  --overlay:       rgba(28, 25, 23, 0.55);
+
+  /* Border (subtle, visible — never invisible) */
+  --border:        #E7E5E4;
+  --border-strong: #D6D3D1;
+
+  /* Text */
+  --text:          #1C1917;
+  --text-muted:    #57534E;
+  --text-soft:     #78716C;
+  --text-inverse:  #FAFAF9;
+
+  /* Accent — primary teal */
+  --accent:        #0F766E;
+  --accent-hover:  #0D6963;
+  --accent-soft:   #CCFBF1;
+  --accent-ink:    #134E4A;
+
+  /* Secondary accent — violet for landing & highlights */
+  --accent-2:        #7C3AED;
+  --accent-2-soft:   #EDE9FE;
+  --accent-2-ink:    #4C1D95;
+
+  /* Tertiary — coral, used for CTAs on the landing page */
+  --accent-3:        #F97316;
+  --accent-3-soft:   #FFEDD5;
+  --accent-3-ink:    #7C2D12;
+
+  /* Gradient blends used by the landing page + hero card */
+  --grad-hero:    linear-gradient(135deg, #134E4A 0%, #0F766E 45%, #7C3AED 100%);
+  --grad-aurora:  radial-gradient(at 20% 10%, rgba(124, 58, 237, 0.18), transparent 55%),
+                  radial-gradient(at 80% 20%, rgba(15, 118, 110, 0.22), transparent 55%),
+                  radial-gradient(at 50% 90%, rgba(249, 115, 22, 0.15), transparent 55%);
+  --grad-mesh:    conic-gradient(from 220deg at 50% 50%,
+                    #CCFBF1 0deg, #EDE9FE 90deg, #FFEDD5 180deg, #CCFBF1 270deg, #CCFBF1 360deg);
+
+  /* State colors */
+  --success:       #059669;
+  --success-soft:  #D1FAE5;
+  --warning:       #B45309;
+  --warning-soft:  #FEF3C7;
+  --danger:        #B91C1C;
+  --danger-soft:   #FEE2E2;
+  --info:          #1D4ED8;
+  --info-soft:     #DBEAFE;
+
+  /* Priority chips */
+  --pri-low:       #6B7280;
+  --pri-med:       #B45309;
+  --pri-high:      #B91C1C;
+
+  /* Spacing scale (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+
+  /* Radius — consistent across surfaces */
+  --r-sm: 6px;
+  --r:    10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+
+  /* Shadows — subtle, layered, never harsh */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04), 0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+
+  /* Typography */
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+  --font-mono:    ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
+
+  --fs-xs:   12px;
+  --fs-sm:   13px;
+  --fs-base: 14px;
+  --fs-md:   15px;
+  --fs-lg:   17px;
+  --fs-xl:   20px;
+  --fs-2xl:  26px;
+  --fs-3xl:  32px;
+  --fs-4xl:  44px;
+  --fs-5xl:  56px;
+  --fs-display: clamp(40px, 6vw, 72px);
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  --lh-tight: 1.2;
+  --lh-base:  1.5;
+  --lh-loose: 1.7;
+
+  /* Motion */
+  --ease:        cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast:    120ms;
+  --dur:         180ms;
+  --dur-slow:    260ms;
+
+  /* Layout */
+  --container:   1320px;
+  --sidebar-w:   272px;
+  --header-h:    64px;
+  --focus-ring:  0 0 0 3px rgba(15, 118, 110, 0.18);
+}
